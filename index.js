@@ -80,9 +80,9 @@ module.exports = function (options) {
 
 			cp.on('close', function (code) {
 				if (errors) {
-					self.emit('error', new gutil.PluginError('gulp-ruby-sass', '\n' + errors.replace(inputTempFile, file.path).replace('Use --trace for backtrace.\n', '')));
-					self.push(file);
-					return cb();
+					// self.emit('error', new gutil.PluginError('gulp-ruby-sass', '\n' + errors.replace(inputTempFile, file.path).replace('Use --trace for backtrace.\n', '')));
+					// self.push(file);
+					// return cb();
 				}
 
 				if (code > 0) {
